@@ -20,7 +20,7 @@ import {
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {getGeneration} from '../../services/api';
 import PAGES_ENUMS from '../../constants/pages_enums';
-import {IMAGE_ITEMS} from '../../images/items';
+import {IMAGE_ITEMS} from '../../assets/images/items';
 
 const Home = props => {
   const [pokemons, setPokemons] = useState([]);
@@ -73,6 +73,7 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   text: {
+    fontFamily: 'pokemon-rbygsc',
     textTransform: 'uppercase',
   },
 });

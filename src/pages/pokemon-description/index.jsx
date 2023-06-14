@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Image, Text, View} from 'react-native';
+import {Image, StyleSheet, Text, View} from 'react-native';
 import {getPokemon} from '../../services/api';
 import {POKEMONS_IMAGE} from '../../assets/images/pokemons';
 
@@ -21,6 +21,12 @@ const PokemonDescription = ({navigation, route}) => {
     });
   }, []);
 
+  const styles = StyleSheet.create({
+    text: {
+      fontFamily: 'pokemon-rbygsc',
+    },
+  });
+
   return (
     <View>
       {pokemon && (
@@ -29,7 +35,7 @@ const PokemonDescription = ({navigation, route}) => {
         />
       )}
 
-      <Text>{description}</Text>
+      <Text style={styles.text}>{description}</Text>
     </View>
   );
 };
