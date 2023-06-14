@@ -1,0 +1,6 @@
+const PAGES_ENUMS = {
+  HOME: 'HOME',
+  POKEMON_DESCRIPTION: 'POKEMON_DESCRIPTION'
+};
+
+export default PAGES_ENUMS;
