@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Image, Text, View} from 'react-native';
 import {getPokemon} from '../../services/api';
-import {POKEMONS_IMAGE} from '../../images/pokemons';
+import {POKEMONS_IMAGE} from '../../assets/images/pokemons';
 
 const PokemonDescription = ({navigation, route}) => {
   const [pokemon, setPokemon] = useState();
@@ -30,7 +30,6 @@ const PokemonDescription = ({navigation, route}) => {
       )}
 
       <Text>{description}</Text>
-      <Text>{pokemon?.pokedex_numbers?.[0].entry_number}</Text>
     </View>
   );
 };
